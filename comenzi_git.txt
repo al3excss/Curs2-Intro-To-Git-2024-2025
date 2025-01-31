@@ -1,4 +1,13 @@
-## initializeaza proiectul de git local - creaza un folder .git ascuns
+## Setarea numelui 
+
+# Setarea numelui utilizatorului
+git config --global user.name "Numele tau..."
+# Citirea numelui utilizatorului
+git config --global user.name
+
+# Setarea 
+
+## initializeaza proiectul de git local - creaza un folder .git ascun
 git init
 
 ## Descarca de pe server un proiect de git
@@ -13,8 +22,15 @@ git log -oneline
 git status
 git status -s
 
-###Comenzi de creare a comitului
+###Comenzi de adaugare a fisierelor in STAGED (inainte de crearea comitului)
 git add filename
 git add .
 git add filename, *
 git add filename1 filename 2filename3
+
+### Comenzi de creare a comitului 
+git commit -m "Acesta este un mesaj descriptiv al comitului"
+git commit --message "Acesta este un mesaj descriptiv al comitului"
+
+### Comanda de adauga + commit (!!! fisierele trebuie sa fi fost incluse intr un commit inainte)
+git commit -am " Acesta este un mesaj descriptiv al comitului"
